@@ -3,11 +3,11 @@ Class: T1.1910.M1
 
 ============================
 
-Kho chứa eProject của Sem 1
+Repo chứa eProject của Sem 1
 
 ============================
 
-Group 4
+========> Group 4 <=========
 
 3 collaborators: Le Minh(minhl93172@gmail.com)
 
@@ -18,3 +18,5 @@ Group 4
 ============================
 
 trello link: https://trello.com/b/RqSD4Xoz
+
+============================
