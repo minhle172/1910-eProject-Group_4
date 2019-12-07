@@ -3,7 +3,9 @@
     padding:0;
     margin: 0;
 }
-
+.header1{
+    margin-top: 15px;
+}
 .header1 ul li{
     display: inline-block;
 }
@@ -27,9 +29,11 @@ i{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 a:hover{
     text-decoration: none;
+    color: black;
 }
 .navi{
     background-color: rgb(231, 231, 231);
@@ -40,7 +44,7 @@ a:hover{
 }
 .navi li{
     display: inline-block;
-    padding: 30px 40px; 
+    padding: 25px 30px;
 }
 .navi li a{
     color: #3F5455;
@@ -49,7 +53,7 @@ a:hover{
 }
 .slideShow{
     width: 1100px;
-    margin: auto;
+
 }
 .section1{
     margin: 20px 0 10px;
@@ -59,11 +63,24 @@ a:hover{
     font-weight: bold;
     transition: 0.3s;
     color: black;
-}
-.section1 h1:hover{
-    color: orange;
+    font-family: 'Courier New', Courier, monospace;
 }
 .section1 img{
     box-shadow:2px 2px 3px rgb(212, 212, 212);
     margin-top: 20px;
 }
+.carousel-inner > .item > img {
+    width:640px;
+    height:360px;
+}
+footer ul li{
+    display: inline-block;
+}
+footer ul li a{
+    padding:0 20px;
+}
+footer ul li a:hover{
+    color: rgb(128, 128, 128);
+    
+}
+

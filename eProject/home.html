@@ -15,8 +15,8 @@
     <script src="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="header1 container">
+    <div class="container">
+        <div class="header1 row">
             <div class="col-md-3">
                 <p class="text-muted"><i class="glyphicon glyphicon-phone-alt"></i> Question? Call us xxx-xxx-xxx</p>
             </div>
@@ -26,12 +26,12 @@
             <div class="col-md-4"  >
                 <ul>
                     <li><a class="ListAHeader1 text-muted" href="#">Customer service</a></li>
-                    <li><a class="ListAHeader1 text-muted" href="#"><i class="glyphicon glyphicon-log-in"></i> Login</a></li>
-                    <li><a class="ListAHeader1 text-muted" href="#"><i class="glyphicon glyphicon-user"></i> Sign up</a></li>
+                    <li><a class="ListAHeader1 text-muted" href="login.html"><i class="glyphicon glyphicon-log-in"></i> Login</a></li>
+                    <li><a class="ListAHeader1 text-muted" href="login.html"><i class="glyphicon glyphicon-user"></i> Sign up</a></li>
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="row">
             <div class="header2">
                 <div class="col-md-3">
                     <a href="home.html"><img src="images/logoTasha2.PNG" alt="" width="200px" height="200px" title="HOME PAGE"></a>
@@ -53,24 +53,28 @@
                 </div>
             </div>
         </div>
+    </div>
+
 
         <!--Navigation-->
         <div class="container-fluid">
             <div class="navi">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">COOKWARE <span class="caret"></span></a></li>
-                    <li><a href="#">REFRIGERATION <span class="caret"></span></a></li>
-                    <li><a href="#">APPLIANCES <span class="caret"></span></a></li>
-                    <li><a href="#">FOOD STORAGE <span class="caret"></span></a></li>
-                    <li><a href="#">OTHERS <span class="caret"></span></a></li>
+                    <li style="background-color: rgb(255, 255, 255);"><a href="#" style="color: chocolate;">HOME</a></li>
+                    <li><a href="cookware.html">COOKWARE <span class="caret"></span></a></li>
+                    <li><a href="refrigeration.html">REFRIGERATION <span class="caret"></span></a></li>
+                    <li><a href="appliance.html">APPLIANCES <span class="caret"></span></a></li>
+                    <li><a href="foodstore.html">FOOD STORAGE <span class="caret"></span></a></li>
+                    <li><a href="others.html">OTHERS <span class="caret"></span></a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
                 </ul>
             </div>
         </div>
         
-        
+    <div class="container">
         <!--slide show-->
-        <div class="containter">
+
+        <div class="">
             <div class="slideShow">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -117,43 +121,70 @@
         </div>
 
         <!--Body-->
-        <div class="container ">
-            <section class="section1 row">
+        <div class="row">
+            <section class="section1">
                 <div class="col-md-4">
-                    <a href="#"><img src="images/cookware.png" alt=""></a>
-                    <a href="#"><h1>COOKWARE</h1></a>
+                    <a href="cookware.html"><img src="images/cookware.png" alt=""></a>
+                    <h1>COOKWARE</h1>
                     
                 </div>
 
                 <div class="col-md-4">
-                    <a href="#"><img src="images/appliance.png" alt=""></a>
-                    <a href="#"><h1>APPLIANCES</h1></a>
+                    <a href="appliance.html"><img src="images/appliance.png" alt=""></a>
+                    <h1>APPLIANCES</h1>
                     
                 </div>
 
                 <div class="col-md-4">
-                    <a href="#"><img src="images/refrig.png" alt=""></a>
-                    <a href="#"><h1>REFRIGERATION</h1></a>
+                    <a href="refrigeration.html"><img src="images/refrig.png" alt=""></a>
+                    <h1>REFRIGERATION</h1>
                     
                 </div>
 
                 <div class="col-md-4">
-                    <a href="#"><img src="images/foodstorage.png" alt=""></a>
-                    <a href="#"><h1>FOOD STORAGE</h1></a>
+                    <a href="foodstore.html"><img src="images/foodstorage.png" alt=""></a>
+                    <h1>FOOD STORAGE</h1>
                 </div>
 
                 <div class="col-md-4">
-                    <a href="#"><img src="images/others.png" alt=""></a>
-                    <a href="#"><h1>OTHERS</h1></a>
+                    <a href="others.html"><img src="images/others.png" alt=""></a>
+                    <h1>OTHERS</h1>
                 </div>
 
                 <div class="col-md-4">
                     <a href="#"><img src="images/newproduct.png" alt=""></a>
-                    <a href="#"><h1>UP COMING PRODUCT</h1></a>
+                    <h1>UP COMING PRODUCT</h1>
                 </div>
-
             </section>
         </div>
     </div>
+
+    <!--upcoming product-->
+    <div class="container">
+
+    </div>
+
+
+    <!--footer-->
+    <hr>
+    <footer class="container">
+        <div class="row">
+            
+            <div class="col-md-6">
+                <h4 class="text-muted">SITE MAP</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted text-center">&copy; copyright TASHA-the home store 2019</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
