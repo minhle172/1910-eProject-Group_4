@@ -1,19 +1,15 @@
 /*style for header*/
 .header1{
-    margin: 10px auto;
+    background-color: rgb(253, 206, 189);
 }
-li{
+.header1 ul li{
     display: inline-block;
 }
-.ListAHeader1{
-    margin: 0 14px;
+.header1 ul li a{
     text-decoration: none;
+    padding: 0 12px;
+    text-align: center;
 }
-.ListAHeader2{
-    margin: 0 36px;
-    font-weight: bold;
-    color:#3F5455;
-}
-nav{
-    box-shadow: 0px 2px 3px grey;
+.header1 ul li a:hover{
+    text-decoration: none;
 }
