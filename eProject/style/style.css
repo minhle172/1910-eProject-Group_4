@@ -97,4 +97,6 @@ footer ul li a:hover{
 .menuthumuc ul li a{
     font-size: 12px;
 }
-.dropdown:hover .dropdown-menu {display: block;}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
