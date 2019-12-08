@@ -36,7 +36,7 @@ a:hover{
     color: black;
 }
 .navi{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(243, 243, 243);
     box-shadow: 0px 2px 3px rgb(230, 230, 230);
 }
 .navi ul{
@@ -44,7 +44,7 @@ a:hover{
 }
 .navi li{
     display: inline-block;
-    padding: 25px 30px;
+    padding: 18px 30px;
 }
 .navi li a{
     color: #3F5455;
@@ -82,5 +82,20 @@ footer ul li a{
 footer ul li a:hover{
     color: rgb(128, 128, 128);
     
+}
+.menuthumuc{
+    border-right: rgb(206, 206, 206) solid thin;
+}
+.menuthumuc h4{
+    font-weight: bold;
+    font-size: 15px;
+    color: #3F5455;
+}
+.menuthumuc ul li{
+    list-style-type: none;
+    text-indent: 15px;
+}
+.menuthumuc ul li a{
+    font-size: 12px;
 }
 
