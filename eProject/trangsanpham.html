@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--JS-->
     <script src="eProject/jquery-3.4.1.min.js"></script>
     <script src="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -59,11 +60,54 @@
         <div class="navi">
             <ul>
                 <li><a href="home.html">HOME</a></li>
-                <li><a href="cookware.html">COOKWARE <span class="caret"></span></a></li>
-                <li><a href="refrigeration.html">REFRIGERATION <span class="caret"></span></a></li>
-                <li><a href="appliance.html">APPLIANCES <span class="caret"></span></a></li>
-                <li><a href="foodstore.html">FOOD STORAGE <span class="caret"></span></a></li>
-                <li><a href="others.html">OTHERS <span class="caret"></span></a></li>
+                <li class="dropdown"><a href="cookware.html" class="dropdown-toggle" data-toggle="dropdown">COOKWARE <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product/cookware-html/cookingpot.html">Cooking pots</a></li>
+                        <li><a href="product/cookware-html/cookingpan.html">Cooking pans</a></li>
+                        <li><a href="product/cookware-html/fryingpan.html">Frying pans</a></li>
+                        <li><a href="product/cookware-html/cookwareset.html">Cookingware sets</a></li>
+                        <li><a href="product/cookware-html/handis.html">Handis</a></li>
+                        <li><a href="product/cookware-html/kadais.html">Kadais</a></li>
+                        <li><a href="product/cookware-html/grillpan.html">Grill pans</a></li>
+                        <li><a href="product/cookware-html/tawas.html">Tawas</a></li>
+                        <li><a href="product/cookware-html/eggpoacher.html">Egg poachers</a></li>
+                        <li><a href="product/cookware-html/steamer.html">Steamers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="refrigeration.html" class="dropdown-toggle" data-toggle="dropdown">REFRIGERATION <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Freezers</a></li>
+                        <li><a href="">Rifrigerators</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="appliance.html" class="dropdown-toggle" data-toggle="dropdown">APPLIANCES <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product/appliance-html/blender.html">Blenders</a></li>
+                        <li><a href="product/appliance-html/breadmaker.html">Bread makers</a></li>
+                        <li><a href="product/appliance-html/coffeemaker.html">Coffee makers</a></li>
+                        <li><a href="product/appliance-html/icecreammaker.html">Ice-cream and sorbet makers</a></li>
+                        <li><a href="product/appliance-html/electrickettle.html">Electric kettles</a></li>
+                        <li><a href="product/appliance-html/foodchopper.html">Food choppers</a></li>
+                        <li><a href="product/appliance-html/toaster.html">Toaster</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="foodstore.html" class="dropdown-toggle" data-toggle="dropdown">FOOD STORAGE <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product/foodstorage-html/flask.html">Flask</a></li>
+                        <li><a href="product/foodstorage-html/spicejar.html">Spice jars</a></li>
+                        <li><a href="product/foodstorage-html/storagebag.html">Storage bags</a></li>
+                        <li><a href="product/foodstorage-html/lunchbox.html">Lunch Boxes</a></li>
+                        <li><a href="product/foodstorage-html/vacuumbottle.html">Vacuum bottles</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="others.html" class="dropdown-toggle" data-toggle="dropdown">OTHERS <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="product/other-html/knife.html">Knifes</a></li>
+                        <li><a href="product/other-html/utensil.html">Utensil</a></li>
+                        <li><a href="product/other-html/janitor.html">Janitorial supplies</a></li>
+                    </ul>
+                </li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
             </ul>
         </div>
@@ -146,8 +190,16 @@
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="login.html">Log in</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-left">
+                <h4 class="text-muted" style="font-weight: bold;">FOLLOW US</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/" class="fa fa-facebook-official text-primary" style="font-size: 24px;"></a></li>
+                    <li><a href="https://www.skype.com/en/" class="fa fa-skype text-info" style="font-size: 24px;"></a></li>
+                    <li><a href="https://www.google.com/" class="fa fa-google-plus-square text-danger" style="font-size: 24px;"></a></li>
                 </ul>
             </div>
         </div>

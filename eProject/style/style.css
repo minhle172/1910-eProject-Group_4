@@ -63,10 +63,9 @@ a:hover{
     font-weight: bold;
     transition: 0.3s;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
 }
 .section1 img{
-    box-shadow:2px 2px 3px rgb(212, 212, 212);
+    box-shadow:2px 2px 3px rgb(235, 235, 235);
     margin-top: 20px;
 }
 .carousel-inner > .item > img {
@@ -98,4 +97,4 @@ footer ul li a:hover{
 .menuthumuc ul li a{
     font-size: 12px;
 }
-
+.dropdown:hover .dropdown-menu {display: block;}
