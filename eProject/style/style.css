@@ -100,3 +100,12 @@ footer ul li a:hover{
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+/*class nay chinh sửa thong tin*/
+.khungthongtin .thongtinsp img{
+    width: 350px;
+    height: 400px;
+    background-color: cornsilk;
+}
+.khungthongtin .thongtinsp{
+    margin-top:50px;
+}
