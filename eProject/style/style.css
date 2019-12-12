@@ -109,3 +109,11 @@ footer ul li a:hover{
 .khungthongtin .thongtinsp{
     margin-top:50px;
 }
+/*class nay chua hinh cua trang phan loai san pham*/
+.khungphanloai img{
+    width: 200px;
+    height: 200px;
+}
+.khungphanloai .col-md-4{
+    margin-top: 10px;
+}
