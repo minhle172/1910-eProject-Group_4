@@ -126,6 +126,11 @@ footer ul li a:hover{
 .khungphanloai img{
     width: 200px;
     height: 200px;
+    box-shadow:2px 2px 5px rgb(235, 235, 235);
+}
+.khungphanloai a{
+    font-family:century gothic;
+    font-weight: bold;
 }
 .khungphanloai .col-md-4{
     margin-top: 10px;
