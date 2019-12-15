@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,24 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="refri/feezers/Midea WHS-109FSS1 Upright.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Midea WHS-109FSS1 Upright Freezer, 3.0 Cubic Feet, Stainless Steel</h3>
-                    <ul>
-                        <li>Mechanical Temperature Adjustment Ranges From -11.2' to 8.6' F</li>
-                        <li>Features Reversible Door that can Open from Left or Right</li>
-                        <li>Contains Two Fixed Shelves and a Removeable Wire Drawer</li>
-                        <li>Energy Saving: Energy Star Rated & Low Noise. Full 1-Year Warranty</li>
-                        <li>Refer the PDF attached in Technical Specification for User Manual</li>
-                      
-                    </ul>
-                    <h3 class="giasanpham">$19.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../refrig-html/newRefri/freezer1.jpg" title="View picture" data-caption="<b>Euhomy Mini Fridge with Freezer, 3.2 Cu.Ft Double-Door Upright Compact Refrigerator with Freezer Ideal Food and Drink Storage Mini Refrigerator for Home</b>">
+                        <img src="../refrig-html/newRefri/freezer1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../refrig-html/newRefri/freezer2.jpg" title="View picture" data-caption="<b>KUPPET Compact Upright Freezer, Single Door, Reversible Stainless Steel Door, Adjustable Removable Shelves, 3.0 cu. ft.</b>">
+                        <img src="../refrig-html/newRefri/freezer2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../refrig-html/newRefri/freezer3.jpg" title="View picture" data-caption="<b>Midea WHS-109FW1 Upright Freezer, 3.0 Cubic Feet, White</b>">
+                        <img src="../refrig-html/newRefri/freezer3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--least-->
+        <link rel="stylesheet" href="../../least-fw/css/least.min.css">
         <!--JS-->
         <script src="../../eProject/jquery-3.4.1.min.js"></script>
         <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -167,26 +169,51 @@
             <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
             <div class=" khungthongtin col-md-9">
                 <div class=" thongtinsp row">
-                    <div class="col-md-4">
-                        <img src="appli/coffee maker.jpg" alt="" width="100%">
-                        <!--hình-->
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-6">
-                        <h3>Breville BNV250BKM1BUC1 Vertuo Coffee and Espresso Machine, 19.25 x 11 x 15.25 in, Matte Black</h3>
-                        <ul>
-                            <li> AUTOMATIC COFFEE/ESPRESSO MACHINE: Have the ability to create barista grade brewed single serve coffee or espresso cups at the touch of a single button. The single touch button mechanism delivers the best in-cup result for whatever style coffee or espresso drink you choose. Designed for use with Nespresso Vertuo capsules only.</li>
-                            <li>VERSATILE COFFEE AND ESPRESSO MAKER: Brew 5 different single serve coffee cup sizes at the touch of a button depending on your coffee needs - Espresso (1.35 oz.), Double Espresso (2.7 oz.), Gran Lungo (5 oz.), Coffee (7.7 oz.) and Alto (14 oz). Pour over ice to create your favorite iced coffee and iced latte drinks.</li>
-                            <li>SMART COFFEE MAKER: Brew the perfect single serve coffee or espresso drink time after time, thanks to Nespresso's CentrifusionTM technology using barcodes to deliver the best in-cup results including the perfect crema for large coffee cup sizes. Simply insert the capsule where it will blend into freshly brewed Coffee or authentic Epsresso.</li>
-                            <li>BUNDLE: The Aeroccino 3 milk frother is included to create the perfect finish to your single serve coffee beverages such as cappuccino or latte. Power rating (in watts): 1350 Watt</li>
+                    <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/coffee1.jpg" title="View picture" data-caption="<b>Hamilton Beach Works with Alexa Smart Coffee Maker, Programmable, 12 Cup Capacity, Black and Stainless Steel (49350) – A Certified for Humans Device</b>">
+                        <img src="../appliance-html/newAppliances/coffee1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/coffee2.jpg" title="View picture" data-caption="<b>Keurig K-Classic Coffee Maker, Single Serve K-Cup Pod Coffee Brewer, 6 to 10 oz. Brew Sizes, Black</b>">
+                        <img src="../appliance-html/newAppliances/coffee2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../appliance-html/newAppliances/coffee3.jpg" title="View picture" data-caption="<b>Mueller Ultima Single Serve Pod Compatible Coffee Maker Machine With 4 Brew Sizes for 1.0 and 2.0 Pods. Rapid Brew Technology with Large Removable 48 oz</b>">
+                        <img src="../appliance-html/newAppliances/coffee3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
 
-                          
-                            
-                            
-                        </ul>
-                        <h3 class="giasanpham">$310.00</h3>
-                        <!--thông tin-->
-                    </div>
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
                 </div>
     
             </div>

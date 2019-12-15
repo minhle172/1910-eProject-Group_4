@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="cookingware/cooking pots/AVACRAFT Stainless Steel.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>AVACRAFT Stainless Steel Saucepan with Glass Lid(Tri-Ply Capsule Bottom, 2.5 Quart)</h3>
-                    <ul>
-                       <li>	18/10 FOOD GRADE STAINLESS STEEL SAUCEPAN: 2.5 QT saucepan with strainer glass lid. Special matte finish inside to prevent scratches over time and mirror finish outside for shiny and stylish look. Easy to read measurement marks inside.</li>
-                       <li>	All-IN-ONE FUNCTION: Shatterproof glass cover with straining holes on both sides to strain pasta, noodles, vegetables & more. No collanders needed. Pour spouts on both sides of the rim for right and left handed. Silicone lid handle for safety!</li>
-                       <li>	EVEN HEAT DISTRIBUTION: Specially constructed tri-ply stainless steel base with pure Aluminum encapsulation that avoids heat spots and distributes heat evenly, saving energy! Long & large ergonomic handle gives firm grip. Designed for air flow to keep handle cool even when the pan is hot.</li>
-                       <li>	BEST QUALITY, EASY TO CLEAN AND DURABLE: Made only with high quality 18/10 food grade stainless steel, which is highly durable, resistant to rust, stain, corrosion or crack, and to top it, designed to look elegant in kitchen. Dishwasher, Refrigerator safe.</li>
-                       <li>	GUARANTEED SATISFACTION: AVACRAFT is the most trusted emerging women driven brand! At AVACRAFT, we’ve always got your back! Buy the best, lifetime guarantee for the product bought from AVACRAFT with 100% refund!</li>
-                    </ul>
-                    <h3 class="giasanpham">$19.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/pot1.jpg" title="View picture" data-caption="<b>Cook N Home 02418 Stainless Steel Lid 5-Quart Stockpot, 5-Qt, Silver</b>">
+                        <img src="../cookware-html/newCookare/pot1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/pot2.jpg" title="View picture" data-caption="<b>Cook N Home 02524 Nonstick Sauce Pan with Lid, 3-Qt, Black, 3-Quart</b>">
+                        <img src="../cookware-html/newCookare/pot2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../cookware-html/newCookare/pot3.jpg" title="View picture" data-caption="<b>Cook N Home 02474 Nonstick Stockpot, 10.5 Quart, Blue</b>">
+                        <img src="../cookware-html/newCookare/pot3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="../../product/foodstorage-html/storagesp/lunchbox.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>OPUX Premium Lunch Box, Insulated Lunch Bag for Men Women Adult | Durable School Lunch Pail for Boys, Girls, Kids | Soft Leakproof Medium Lunch Cooler Tote...</h3>
-                    <ul>
-                        <li>This premium medium capacity insulated lunch bag with shoulder strap easily fits more than 1 person’s lunch, and is ideal for adult men, women, teens for packing lunch to work or school. Its convenient size make it a versatile choice for packing snacks for long road trips in the car!</li>
-                        <li>LEAKPROOF AND THERMAL INSULATED - Equipped with eco-friendly PEVA lining that is soft, leakproof, and insulated, this lunch bag excel in keeping your beverages cold or keeping your lunch warm. This lunch bag is large enough to fit six-pack of soda, or more than one person's lunch.</li>
-                        <li>FUNCTIONAL – The sewn-in shoulder strap makes it convenient and comfortable to wear this on your shoulder or across your chest. Need more space? There are also side pouches to store your water bottle and front pocket to store extra items such as utensils and napkins.</li>
-                        <li>DURABLE CONSTRUCTION - Dual reinforced zippers for easy opening; Made with high-quality nylon and 600D polyester fabric prevent rips and ensure maximum durability. The soft internal lining is also easy to maintain and clean – simply wipe with damp cloth to clean!</li>
-                        <li>Measures at 10" x 7" x 7.75" (L x W x H); Fits 14 can; Available in 19 colors!</li>
-                    </ul>
-                    <h3 class="giasanpham">$13.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/lunch1.jpg" title="View picture" data-caption="<b>ThinkFit Insulated Meal Prep Lunch Box with 6 Food Portion Control Containers - BPA-Free, Reusable, Microwavable, Freezer Safe - With Shaker Cup, Pill...</b>">
+                        <img src="../foodstorage-html/newStorage/lunch1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/lunch2.jpg" title="View picture" data-caption="<b>Bear KompleX Insulated Meal Prep Management Lunch Bag, 6 Compartment Lunch Box Cooler Tote with 3 Microwave Dishwasher Safe Portion Control Containers,...</b>">
+                        <img src="../foodstorage-html/newStorage/lunch2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../foodstorage-html/newStorage/lunch3.jpg" title="View picture" data-caption="<b>ISOCUBE 3 Meal Prep Management Insulated Lunch Bag Cooler with 6 Stackable Meal Prep Containers, 2 ISOBRICKS, and Shoulder Strap - MADE IN USA (Blackout)</b>">
+                        <img src="../foodstorage-html/newStorage/lunch3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

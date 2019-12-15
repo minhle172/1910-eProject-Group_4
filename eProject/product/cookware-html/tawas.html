@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,24 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="cookingware/tawas/Lodge L9OG3 Cast Iron Round.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Lodge L9OG3 Cast Iron Round Griddle, Pre-Seasoned, 10.5 Inch (Pack of 1)</h3>
-                    <ul>
-                        <li>10.5 Inch SeasonedCast Iron Griddle. The Lodge Cast Iron Griddle delivers heavy-duty performance, with lower side walls and a wider cooking surface. Great for the stovetop, campfire or oven</li>
-                        <li>SEASONED COOKWARE. A good seasoning makes all the difference. Lodge seasons its cookware with 100% vegetable oil; no synthetic coatings or chemicals. The more you use your iron, the better the seasoning will get</li>
-                        <li>MADE IN THE USA. Lodge has been making cast iron cookware in South Pittsburg, Tennessee (pop. 3,300) since 1896. With over 120 years of experience, their cast iron is known for its high quality design, lifetime durability, and cooking versatility</li>
-                        <li>MAKE EVERY MEAL A MEMORY. Lodge knows that cooking is about more than just the food; it’s about the memories</li>
-                        <li>FAMILY-OWNED. Lodge is more than just a business; it’s a family. The Lodge family founded the company in 1896, and they still own it today. From environmental responsibility to community development, their heads and hearts are rooted in America</li>
-                      
-                    </ul>
-                    <h3 class="giasanpham">$14.88</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/tawas1.jpg" title="View picture" data-caption="<b>Hawkins/Futura Q41 Nonstick Tava/Griddle, 13-inch, Gray</b>">
+                        <img src="../cookware-html/newCookare/tawas1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/tawas2.jpg" title="View picture" data-caption="<b>Suntyle 30cm Nonstick Concave Dosa Tawa/Griddle,11.8-inch</b>">
+                        <img src="../cookware-html/newCookare/tawas2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../cookware-html/newCookare/tawas3.jpg" title="View picture" data-caption="<b>Futura L52 Hard Anodised Concave Tava Griddle, 10-Inch, 4.88 with Steel Handle, 26 cm, Black</b>">
+                        <img src="../cookware-html/newCookare/tawas3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

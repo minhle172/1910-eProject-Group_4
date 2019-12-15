@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--least-->
+        <link rel="stylesheet" href="../../least-fw/css/least.min.css">
         <!--JS-->
         <script src="../../eProject/jquery-3.4.1.min.js"></script>
         <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -167,23 +169,51 @@
             <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
             <div class=" khungthongtin col-md-9">
                 <div class=" thongtinsp row">
-                    <div class="col-md-4">
-                        <img src="appli/food chopper.jpg" alt="" width="100%">
-                        <!--hình-->
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-6">
-                        <h3>Cuisinart DLC-2AMR Mini-Prep Plus Processor, Metallic Red</h3>
-                        <ul>
-                            <li>Chop or grind at the touch of a button. Cord length : 36 Inches</li>
-                            <li>24-ounce work bowl with handle</li>
-                          
-                            
-                            
-                        </ul>
-                        <h3 class="giasanpham">$56.99</h3>
-                        <!--thông tin-->
-                    </div>
+                    <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/chopper1.jpg" title="View picture" data-caption="<b>Fullstar Vegetable Chopper Mandoline Slicer Dicer - Onion Chopper - Vegetable Dicer Food Chopper Dicer Pro - Food Choppers and Dicers - Spiralizer Vegetable...</b>">
+                        <img src="../appliance-html/newAppliances/chopper1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/chopper2.jpg" title="View picture" data-caption="<b>KitchenAid KFC3516ER 3.5 Cup Food Chopper, Empire Red</b>">
+                        <img src="../appliance-html/newAppliances/chopper2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../appliance-html/newAppliances/chopper3.jpg" title="View picture" data-caption="<b>Hamilton Beach Mini 3-Cup Food Processor & Vegetable Chopper, 350 Watts, for Dicing, Mincing, and Puree, Black</b>">
+                        <img src="../appliance-html/newAppliances/chopper3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
                 </div>
     
             </div>

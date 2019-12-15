@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,22 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="../../product/other-html/otherssp/janitorialsupplies.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>JIAHAI Broom Holder Floor Standing Movable Floor-Mounted mop Rack Cleaning Tool Storage for Schools, Hospitals, Factories, Hotels, Restaurants, Property Companies</h3>
-                    <ul>
-                        <li>For storing and moving mop holder ,broom rack, dustpan, shovels, Vacuum cleaner,Cleaning tools ,and the like ,keep clean</li>
-                        <li>This rolling yard cart can hold up to 10 large tools and 12 small tools- making cheaning work a breeze</li>
-                        <li>Rolling balls automatically adjust to each handle's thickness and grips it securely,a holder that actually is Spring Loaded,Each ball holds up to 20 pounds of weight</li>
-                        <li>The base frame is composed of composite steel pipe,it will not rust, dent, rot or peel? high-quality</li>
-                    </ul>
-                    <h3 class="giasanpham">$109.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../other-html/newOthers/janitor1.jpg" title="View picture" data-caption="<b>ProTeam Backpack Vacuums, Super CoachVac Commercial Backpack Vacuum Cleaner with HEPA Media Filtration and Telescoping Wand Tool Kit, 10 Quart, Corded</b>">
+                        <img src="../other-html/newOthers/janitor1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../other-html/newOthers/janitor2.jpg" title="View picture" data-caption="<b>GlovePlus Industrial Black Nitrile Gloves - 5 mil, Latex Free, Powder Free, Textured, Disposable, XXLarge, GPNB49100-BX, Box of 100</b>">
+                        <img src="../other-html/newOthers/janitor2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../other-html/newOthers/janitor3.jpg" title="View picture" data-caption="<b>Nilodor 128 LZYM Urine Digester, Lemon, 1 gal</b>">
+                        <img src="../other-html/newOthers/janitor3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

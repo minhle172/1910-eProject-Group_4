@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="cookingware/egg poacher/asf.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>ExcelSteel 521 Non Stick Easy Use Rust Resistant Home Kitchen Breakfast Brunch Induction Cooktop Egg Poacher, 4 Cups, 18/10 Stainless Steel</h3>
-                    <ul>
-                        <li>Constructed in stainless steel for durability</li>
-                        <li>Stay cool handle</li>
-                        <li>Easy to clean</li>
-                        <li>Nonstick coated egg cups for easy extraction of eggs</li>
-                      
-                    </ul>
-                    <h3 class="giasanpham">$54.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/egg1.jpg" title="View picture" data-caption="<b>Egg Poacher Pan - Stainless Steel Poached Egg Cooker – Perfect Poached Egg Maker – Induction Cooktop Egg Poachers Cookware Set with 4 Large...</b>">
+                        <img src="../cookware-html/newCookare/egg1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/egg2.jpg" title="View picture" data-caption="<b>Eggssentials Stainless Steel Egg Poacher Pan Insert | 4 Poached Egg Cups PFOA Free Nonstick | 7.25 inch Rack Compatible with Skillet Instant Pot Pressure</b>">
+                        <img src="../cookware-html/newCookare/egg2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../cookware-html/newCookare/egg3.jpg" title="View picture" data-caption="<b>Farberware Accessories Aluminum Nonstick 4-Cup Covered Egg Poacher Skillet, Gray</b>">
+                        <img src="../cookware-html/newCookare/egg3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

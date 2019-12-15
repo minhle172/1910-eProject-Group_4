@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--least-->
+        <link rel="stylesheet" href="../../least-fw/css/least.min.css">
         <!--JS-->
         <script src="../../eProject/jquery-3.4.1.min.js"></script>
         <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -167,26 +169,51 @@
             <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
             <div class=" khungthongtin col-md-9">
                 <div class=" thongtinsp row">
-                    <div class="col-md-4">
-                        <img src="appli/Electric Kettle.jpg" alt="" width="100%">
-                        <!--hình-->
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-6">
-                        <h3>Electric Kettle, Miroco 1.5L Double Wall 100% Stainless Steel BPA-Free Cool Touch Tea Kettle with Overheating Protection, Cordless with Auto Shut-Off</h3>
-                        <ul>
-                            <li>100% Stainless Steel Interior: The double wall kettle liners, inner lid, spout & rim are made of food-grade 304 stainless steel, all plastic is 100% BPA free and does not touch the water to provide healthy water for your family</li>
-                            <li>Extra-Safe Double Wall Design: The electric kettle’s double wall system made of quality PP material clad with stainless steel to resist scratching and protects users from scalding</li>
-                            <li>Easy Access Kettle Spout: A wide spout and opening for easy filling and keeping the kettle hygienically clean</li>
-                            <li>Fast Boiling Electric Kettle: Boil a full 1.5L / 8 cups in only 6-7 minutes, conveniently prepare hot tea, delicious cocoa, or instant soup and saving time for more important things</li>
+                    <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/kettle1.jpg" title="View picture" data-caption="<b>BLACK+DECKER 1.7L Stainless Steel Electric Cordless Kettle, Black, KE2900B</b>">
+                        <img src="../appliance-html/newAppliances/kettle1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/kettle2.jpg" title="View picture" data-caption="<b>BLACK+DECKER KE1500B 1.7L Rapid Boil Electric Cordless Kettle, Black</b>">
+                        <img src="../appliance-html/newAppliances/kettle2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../appliance-html/newAppliances/kettle3.jpg" title="View picture" data-caption="<b>COSORI Electric Kettle(BPA-Free) 1.7 L Water Boiler & Tea Heater with LED Indicator Light,Auto Shut-Off & Boil-Dry Protection, 100% Stainless Steel</b>">
+                        <img src="../appliance-html/newAppliances/kettle3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
 
-                          
-                            
-                            
-                        </ul>
-                        <h3 class="giasanpham">$210.98</h3>
-                        <!--thông tin-->
-                    </div>
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
                 </div>
     
             </div>

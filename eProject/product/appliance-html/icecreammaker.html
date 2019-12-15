@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--least-->
+        <link rel="stylesheet" href="../../least-fw/css/least.min.css">
         <!--JS-->
         <script src="../../eProject/jquery-3.4.1.min.js"></script>
         <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -167,26 +169,51 @@
             <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
             <div class=" khungthongtin col-md-9">
                 <div class=" thongtinsp row">
-                    <div class="col-md-4">
-                        <img src="appli/Ice Cream Maker.jpg" alt="" width="100%">
-                        <!--hình-->
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-6">
-                        <h3>Cuisinart ICE-30R Pure Indulgence Frozen Yogurt Sorbet & Ice Cream Maker, 2 quart, Brushed Metal/Red</h3>
-                        <ul>
-                            <li>Double insulated freezer bowl holds up to 2 quarts of frozen dessert</li>
-                            <li>Brushed metal housing with embossed logo</li>
-                            <li>Heavy-duty motor makes frozen desserts or drinks in as little as 25 minutes</li>
-                            <li>Large ingredient spout for adding mix-ins</li>
-                            <li>Limited 3-year warranty; BPA Free</li>
-                          
-                            
-                            
-                        </ul>
-                        <h3 class="giasanpham">$389.99</h3>
-                        <!--thông tin-->
-                    </div>
+                    <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/ice1.jpg" title="View picture" data-caption="<b>Cuisinart ICE-30BC Pure Indulgence 2-Quart Automatic Frozen Yogurt, Sorbet, and Ice Cream Maker - Silver</b>">
+                        <img src="../appliance-html/newAppliances/ice1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/ice2.jpg" title="View picture" data-caption="<b>Cuisinart ICE-21 1.5 Quart Frozen Yogurt-Ice Cream Maker (White)</b>">
+                        <img src="../appliance-html/newAppliances/ice2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../appliance-html/newAppliances/ice3.jpg" title="View picture" data-caption="<b>Cuisinart ICE-30R Pure Indulgence Frozen Yogurt Sorbet & Ice Cream Maker, 2 quart, Brushed Metal/Red</b>">
+                        <img src="../appliance-html/newAppliances/ice3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
                 </div>
     
             </div>

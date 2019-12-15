@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,24 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="refri/refi/COSTWAY Compact Refrigerator.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>COSTWAY Compact Refrigerator, 2-Door 3.4 cu. ft. Fridge, Freezer Cooler Unit for Dorm, Office, Apartment with Adjustable Removable Glass Shelves(White)</h3>
-                    <ul>
-                        <li>【2-Door Design】Large 3.4 cu. ft. capacity gives you the space to keep fresh foods organized and enough room to store frozen foods. And the two exterior doors allow you to access the freezer or the refrigeration compartment.</li>
-                        <li>【Powerful Performance】This refrigerator cools quickly and evenly, and it will keep ice frozen solid and foods perfectly chilled. It is an excellent value that will bring years of quiet, reliable use.</li>
-                        <li>【Crisper Drawer】The crisper drawer is designed for your fruits and vegetables, which always keeps them fresh</li>
-                        <li>【Freezer Compartment】Separate freezer compartment chills your ice cream all summer, and the included ice tray can make ice cubes to keep your drinks cool</li>
-                      
-                    </ul>
-                    <h3 class="giasanpham">$299.99</h3>
-                    <!--thông tin-->
-                    
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../refrig-html/newRefri/refrig1.jpg" title="View picture" data-caption="<b>SMETA Counter Depth French Door Refrigerator Bottom Freezer, Fingerprint Resistant, 20.66 cu ft Capacity,Stainless Steel</b>">
+                        <img src="../refrig-html/newRefri/refrig1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../refrig-html/newRefri/refrig2.jpg" title="View picture" data-caption="<b>Thor Kitchen Automatic Ice-maker, 36inch Refrigerator with Counter Depth French Door</b>">
+                        <img src="../refrig-html/newRefri/refrig2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../refrig-html/newRefri/refrig3.jpg" title="View picture" data-caption="<b>Smad 36in French Door Refrigerator 4 Doors Freezer Stainless Steel with Ice Maker, 20 Cu. Ft.</b>">
+                        <img src="../refrig-html/newRefri/refrig3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

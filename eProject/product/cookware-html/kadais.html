@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="cookingware/kadais/Lodge P14W3 Pro-Logic Cast Iron.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Lodge P14W3 Pro-Logic Cast Iron Wok, 14-inch, Black</h3>
-                    <ul>
-                        <li>14 Inch Seasoned Cast Iron Wok. The Lodge Cast Iron Wok weighs 11.86 lbs and is made of 100% cast iron, which retains heat better than other metals and makes for short work of everything from a stir fry to a summer vegetable sauté. The flattened bottom is ideal for all cooking surfaces, including induction.</li>
-                        <li>SEASONED COOKWARE. A good seasoning makes all the difference. Lodge seasons its cookware with 100% vegetable oil; no synthetic coatings or chemicals. The more you use your iron, the better the seasoning will get</li>
-                        <li>MADE IN THE USA. Lodge has been making cast iron cookware in South Pittsburg, Tennessee (pop. 3,300) since 1896. With over 120 years of experience, their cast iron is known for its high quality design, lifetime durability, and cooking versatility.</li>
-                        <li>MAKE EVERY MEAL A MEMORY. Lodge knows that cooking is about more than just the food; it’s about the memories.</li>
-                      
-                    </ul>
-                    <h3 class="giasanpham">$47.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/kadai1.jpg" title="View picture" data-caption="<b>Lodge 9 Inch Cast Iron Mini Wok w/ Loop Handles</b>">
+                        <img src="../cookware-html/newCookare/kadai1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/kadai2.jpg" title="View picture" data-caption="<b>Jim Beam JB0200 12'' Pre Seasoned Heavy Duty Construction Cast Iron Grilling Wok, Large, Black</b>">
+                        <img src="../cookware-html/newCookare/kadai2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../cookware-html/newCookare/kadai3.jpg" title="View picture" data-caption="<b>Uno Casa Cast Iron Wok Pan - Flat Bottom Wok with Silicone Lid - 12.5 Inch, 5.2 Q</b>">
+                        <img src="../cookware-html/newCookare/kadai3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="../../product/other-html/otherssp/knifes.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Stainless Steel Knife Set with Block - 13 Kitchen Knives Set Chef Knife Set with Knife Sharpener, 6 Steak Knives, Bonus Peeler Scissors Cheese Pizza Knife...</h3>
-                    <ul>
-                        <li>Size:13 Piece Knife Set</li>
-                        <li>PROFESSIONAL QUALITY AT ITS BEST – The best materials to update your cooking! This stainless-steel knife set gives you superior blades coated with nonstick paint plus ergonomic PP handles. Sharp, sturdy & practical. No rust, stains or pitting here!</li>
-                        <li>A MULTI-PURPOSE KITCHEN DÉCOR MUST – A perfect mix of design & practicality, featuring knives for all purposes: carving knife, utility knife, cheese knife, pizza knife, chef knife, bread knife, paring knife, steak knives. Excellent precision cutting!</li>
-                        <li>ONE OF A KIND STAINLESS STEEL KNIFE SET - Home Hero brings together a unique mix of quality sharpness, great value, durability & professional crafted accuracy. Now anyone, newbie cook or master chef can enjoy cooking much faster, easier, cleaner.</li>
-                        <li>100% MONEY BACK GUARANTEE – We’re dedicated to enhance your cooking experience. Our aim: 100% satisfied customers. However, if you’re not happy with your Home Hero Knife Set, you can return it anytime and get a full refund. We’ll ask no questions.</li>
-                    </ul>
-                    <h3 class="giasanpham">$38.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../other-html/newOthers/knife1.jpg" title="View picture" data-caption="<b>MOSFiATA 8in Super Sharp Professional Chef's Knife with Finger Guard and Knife Sharpener, German High Carbon Stainless Steel 4116 with Micarta Handle...</b>">
+                        <img src="../other-html/newOthers/knife1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../other-html/newOthers/knife2.jpg" title="View picture" data-caption="<b>Ross Henery Professional Eclipse Premium stainless Steel 9 piece chefs knife set in carry case</b>">
+                        <img src="../other-html/newOthers/knife2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../other-html/newOthers/knife3.jpg" title="View picture" data-caption="<b>Shenzhen Knives Kitchen 3-piece ceramic knife set includes ceramic knives (6.5in Chef's knife, 5in Slicing/Utility knife & 4in Paring knife)</b>">
+                        <img src="../other-html/newOthers/knife3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

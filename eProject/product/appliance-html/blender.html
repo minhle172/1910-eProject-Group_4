@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -167,24 +169,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="appli/blender.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Hamilton Beach Power Elite Blender with 40oz Glass Jar and 3-Cup Vegetable Chopper, 12 Functions for Puree, Ice Crush, Shakes and Smoothies, Black and Stainless Steel</h3>
-                    <ul>
-                        <li>Blender and chopper in 1 appliance</li>
-                        <li>40oz BPA free glass pitcher and 3 Cup food chopper</li>
-                        <li>Revolutionary Wave Action system continuously pulls mixture down into the blades for smooth results every time</li>
-                        <li>Unique, no mess spout with hinged cap makes pouring easy</li>
-                        <li>4 blending buttons with 12 blending functions to make milkshakes and crush ice to food preparation such as puree, device, chop and grate</li>
-                        
-                    </ul>
-                    <h3 class="giasanpham">$39.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/blender1.jpg" title="View picture" data-caption="<b>Hamilton Beach Power Elite Blender with 12 Functions for Puree, Ice Crush, Shakes and Smoothies and 40oz BPA Free Glass Jar, Black and Stainless Steel (58148A)</b>">
+                        <img src="../appliance-html/newAppliances/blender1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/blender2.jpg" title="View picture" data-caption="<b>Blendtec Designer Series Blender - WildSide+ Jar (90 oz) - Professional-Grade Power - Self-Cleaning - 6 Pre-programmed Cycles - 8-Speeds - Sleek and Slim - Red</b>">
+                        <img src="../appliance-html/newAppliances/blender2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../appliance-html/newAppliances/blender3.jpg" title="View picture" data-caption="<b>Braun MQ505 Multiquick Hand Blender, Black</b>">
+                        <img src="../appliance-html/newAppliances/blender3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

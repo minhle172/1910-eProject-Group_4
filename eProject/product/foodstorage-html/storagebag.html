@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="../../product/foodstorage-html/storagesp/storagebag.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Reusable Silicone Food Storage Bags,WOHOME Airtight Seal Food Preservation Bags/Food Grade/Versatile Preservation Bag Container for Vegetable,Liquid,Snack...</h3>
-                    <ul>
-                        <li>SOME CUSTOMERS GOOD ADVISES - Some customers said it's a little hard to open or close,(but it slides easily when wet) please don't worry about it.Its normal when you use them for the first time.And It is great for the slider bar to have a tight seal,just make sure to line up the zipper and track correctly. This is what keeps the bags airtight and leak-proof.Any questions,just feel free to contact us at anytime,we can solve all the problems that you meet.</li>
-                        <li>REUSABLE FOOD STORAGE BAG- WOHOME reusable silicone food storage bags are made of food grade silicone and does not contain any fillers, coating, BPA, BPS, BPF or PVC or or any poisonous chemicals, tasteless, which can be dangerous to your health after they migrate into the food.Directly reduce the amount of plastic in your house with these reusable silicone food storage bags.Great Heat and cold resistant, temperature resistant -58?~482?(-50?~+250?).Safely use in the dishwasher, freezer, microwave</li>
-                        <li>HERMETIC SEAL AND LEAKPROOF- Our silicone food storage bag are designed with Airtight seal, leakproof vacuum and zip-locked container to keep food fresh and liquids contained with no spill,which can makes it easy to carry on and go for a camping trip.(You can also use a dry-erase marker to write on the bags.)</li>
-                        <li>CONVENIENCE- WOHOME Reusable Silicone Food Bags is great for the microwave, steamer, refrigerator, freezer & sous vide cooking. After use, you can fold them up or lay them flat, which is very convenient to store in the kitchen drawer or hanging on the hooks of the pantry.</li>
-                        <li>SERVICE- 6 pack Silicone Food Storage Bags.If you have any problems with your order, please contact us at anytime you want and we would be happy to reply you very quickly !</li>
-                    </ul>
-                    <h3 class="giasanpham">$24.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/bag1.jpg" title="View picture" data-caption="<b>Ziploc Storage Bags Gallon, 75 Count</b>">
+                        <img src="../foodstorage-html/newStorage/bag1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/bag2.jpg" title="View picture" data-caption="<b>Reusable Food Storage Bags - 10 PCS BPA FREE Freezer Bags(2 Gallon Bags + 4 Reusable Sandwich Bags + 4 Reusable Snack Bags) LEAKPROOF Reusable Lunch Ziplock...</b>">
+                        <img src="../foodstorage-html/newStorage/bag2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../foodstorage-html/newStorage/bag3.jpg" title="View picture" data-caption="<b>Reusable Storage Bags,Hobest 4 Stand Up Sandwich Bags, 3 BPA Free Snack Bags for Kids, 3 Leakproof Freezer Bags for Lunch 10 Pack</b>">
+                        <img src="../foodstorage-html/newStorage/bag3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,24 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="cookingware/steamers/81BCMsjQuHL._SL1500_.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Oster Sangerfield Steamer Set with Lid for Stovetop Use, Stainless Steel, 1</h3>
-                    <ul>
-                        <li>3 Qt. (quart) Casserole W/ Lid & Steamer Insert</li>
-                        <li>Steamer set with lids</li>
-                        <li>Material: Stainless Steel</li>
-                        <li>Hand wash Recommended</li>
-                        <li>Ideal for any kitchen </li>
-                      
-                    </ul>
-                    <h3 class="giasanpham">$23.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/steam1.jpg" title="View picture" data-caption="<b>Oster Sangerfield Steamer Set with Lid for Stovetop Use, Stainless Steel, 1</b>">
+                        <img src="../cookware-html/newCookare/steam1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/steam2.jpg" title="View picture" data-caption="<b>Mister Kitchenware 10 Inch Handmade Bamboo Steamer, 2 Tier Baskets, Healthy Cooking for Vegetables, Dim Sum Dumplings, Buns, Chicken Fish and Meat</b>">
+                        <img src="../cookware-html/newCookare/steam2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../cookware-html/newCookare/steam3.jpg" title="View picture" data-caption="<b>CONCORD 3 Tier Premium Stainless Steel Steamer Set (26 CM)</b>">
+                        <img src="../cookware-html/newCookare/steam3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

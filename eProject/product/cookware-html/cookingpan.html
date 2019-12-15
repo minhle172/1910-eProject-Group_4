@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="cookingware/cooking pans/COOKER KING Nonstick Saute Pan.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>COOKER KING Nonstick Saute Pan, 11 Inch PFOA Free Deep with Lid, Dishwasher Safe, Multi-Function Skillet, Blue</h3>
-                    <ul>
-                        <li>	HEALTHY NONSTICK - Quality nonstick coating interior makes cooking and cleaning a breeze. Toxin-free guarantees no harmful substances will release.</li>
-                        <li>	CONVENIENTLY DESIGNED GLASS LID - Glass lid lets you view the cooking procedure and seals in the flavor and nutrients for a better tasting food</li>
-                        <li>	HANDLE ALWAYS STAY COOL - The ergonomic triple-riveted handle provides a comfortable grip. And stays cool for your secure while using the skillet.</li>
-                        <li>	CERAMIC NONSTICK - The beautiful ceramic nonstick exterior surface will not discolor even after burned on a stove or washed with dishwasher.</li>
-                        <li>	EXTREME CONVENIENCE - Saute Pans are dishwasher safe for easy cleanup. Large capacity for cooking big meals.</li>
-                    </ul>
-                    <h3 class="giasanpham">$39.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/pan1.jpg" title="View picture" data-caption="<b>T-fal C5610264 Titanium Advanced Nonstick Thermo-Spot Heat Indicator Dishwasher Safe Cookware Fry Pan, 8-Inch, Black</b>">
+                        <img src="../cookware-html/newCookare/pan1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/pan2.jpg" title="View picture" data-caption="<b>T-fal C51782 ProGrade Titanium Nonstick Thermo-Spot Dishwasher Safe PFOA Free with Induction Base Saute Pan Jumbo Cooker Cookware, 5-Quart, Black</b>">
+                        <img src="../cookware-html/newCookare/pan2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../cookware-html/newCookare/pan3.jpg" title="View picture" data-caption="<b>T-fal B36282 Nonstick Deep Covered Everyday Pan with Ergonomic Stay-Cool Handles Cookware, 12-Inch, Black</b>">
+                        <img src="../cookware-html/newCookare/pan3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

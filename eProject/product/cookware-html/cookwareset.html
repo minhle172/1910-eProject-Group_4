@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="cookingware/cockware sets/11-Piece Nonstick Kitchen Cookware Set.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>11-Piece Nonstick Kitchen Cookware Set - Excilon Blue Diamond Ceramic Home Kitchen Ware Pots and Pan Set with Saucepan, Frying Pans, Cooking Pots, Dutch Oven Pot, Lids, Utensil - NutriChef NCCW11DS</h3>
-                    <ul>
-                      <li>	11-PIECE SET: NutriChef offers a 11-piece nonstick cookware set which includes 1. 7qt saucepan pot w/ lid, 3. 6qt dutch oven pot w/ lid, 2. 1qt cooking pot w/ lid, 11” large fry pan, 8” small fry pan, soup ladle, pasta fork, and spatula</li>
-                      <li>	NON-STICK COATING: The non stick pot set cooking ware features a durable and long lasting nonstick coating for easy tossing, cleaning & healthy cooking. Features blue diamond ceramic exterior which makes the pot more durable & w/ better heat transfer</li>
-                      <li>	COOL TOUCH HANDLE GRIPS: This pots set features cool-touch ergonomic handles & also heat-resistant which ensures comfortable & safe cooking. Offers an elegant & sleek diamond line pattern adding a stylish and modern touch to the pots and pans</li>
-                      <li>  SEE-THROUGH LIDS: The non stick cookware is equipped with see through tempered glass lids with vent holes that allow steam to escape. The cookware set effectively distributes and retains heat for even cooking with maximum temperature of 500° F</li>
-                      <li>	INDUCTION READY: These pots and skillet fry pans are safe for use in gas, electric, ceramic & induction counters. Made of reinforced forged aluminum w/ coating thickness of 25-35um, 3. 5mm multi-layered. Includes heat-resistant nylon silicone utensils</li>
-                    </ul>
-                    <h3 class="giasanpham">$179.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/cws1.jpg" title="View picture" data-caption="<b>Cook N Home 02606 8-Piece Stainless Steel Cookware Set, Silver</b>">
+                        <img src="../cookware-html/newCookare/cws1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../cookware-html/newCookare/cws2.jpg" title="View picture" data-caption="<b>Cook N Home 15-Piece Nonstick Stay Cool Handle Cookware Set, Black</b>">
+                        <img src="../cookware-html/newCookare/cws2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../cookware-html/newCookare/cws3.jpg" title="View picture" data-caption="<b>Cuisinart 77-17N 17 Piece Chef's Classic Set, Stainless Steel</b>">
+                        <img src="../cookware-html/newCookare/cws3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

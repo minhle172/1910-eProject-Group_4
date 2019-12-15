@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,21 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="../../product/foodstorage-html/storagesp/spicejar.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Aozita 24 Pcs Glass Spice Jars/Bottles - 4oz Empty Square Spice Containers with 612 Spice Labels - Shaker Lids and Airtight Metal Caps - Silicone...</h3>
-                    <ul>
-                        <li>COMPLETE SQUARE SPICE BOTTLES SET» 24 Square Empty Glass Spice Jars, 24 Shaker Lids, 24 Metal Caps and 2 kinds of Waterproof Spice Jar Labels ( Pre-printed Clear PVC labels, Chalkboard Labels, and Blank Labels), a collapsible silicone funnel to help transfer spices, simplifying the refilling task!</li>
-                        <li>HIGH-QUALITY JARS » Aozita Spice Jars are made from high-quality Lead-Free durable glass. Clear glass let you have a clear look of spices, each square glass jar measures approximately 4" x 1 3/4" with a 1 1/4" opening. The modern design square shape and tops fit any spice rack, cabinet, organizer, drawers, or kitchen.</li>
-                        <li>PREMIUM ACCESSORY » Exclusive sift and pour shaker lids matching metal airtight caps which means your herbs stay fresher longer! 612 Preprinted Round Spice Labels which includes 32 blank labels that can be written on with a white paint pen, this gives you the option of labeling the sides or the lid of the jars.</li>
-                    </ul>
-                    <h3 class="giasanpham">$30.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/spice1.jpg" title="View picture" data-caption="<b>ENS Small Glass Canister with Lid, Clear Airtight Sealed Spice Jars Set of 4, 8 Fluid Ounce Decorative Kitchen Containers for Herbs or Apothecary</b>">
+                        <img src="../foodstorage-html/newStorage/spice1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/spice2.jpg" title="View picture" data-caption="<b>Spice Jars - 12 Airtight Flip Top Bottles with 40 Labels & Chalkboard Pen - Complete Set of 3.4 Ounce Square Empty Spice Bottles with Funnel | Kitchen...</b>">
+                        <img src="../foodstorage-html/newStorage/spice2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../foodstorage-html/newStorage/spice3.jpg" title="View picture" data-caption="<b>HC Elegant Home Airtight Glass Spice Jar Hermetic Seal Bail & Trigger/Jar with Lid 6 Ounce Each Use As Spice Canister Set of 4 6 Ounce Each</b>">
+                        <img src="../foodstorage-html/newStorage/spice3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

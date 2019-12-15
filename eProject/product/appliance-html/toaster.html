@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--least-->
+        <link rel="stylesheet" href="../../least-fw/css/least.min.css">
         <!--JS-->
         <script src="../../eProject/jquery-3.4.1.min.js"></script>
         <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -167,25 +169,51 @@
             <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
             <div class=" khungthongtin col-md-9">
                 <div class=" thongtinsp row">
-                    <div class="col-md-4">
-                        <img src="appli/toaster.jpg" alt="" width="100%">
-                        <!--hình-->
-                    </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-6">
-                        <h3>AmazonBasics 2 Slice Extra Wide Slot Toaster - Black</h3>
-                        <ul>
-                            <li>2-slice toaster for toasting one or two slices of bread at a time; 6 shade settings accommodate individual preferences</li>
-                            <li>Extra-wide slots for bagels and thicker slices; each slot measures 5-1/4 inches long by 1-1/4 inches wide</li>
-                            <li>Bagel setting for toasting just the cut side; Frozen setting for defrosting bread; Cancel function ends the session at any time</li>
-                            <li>Extra-lift lever for safely removing smaller pieces; 22-inch power cord (when routed out the back); cord wrap; removable crumb tray (located in the back)</li>
-                          
-                            
-                            
-                        </ul>
-                        <h3 class="giasanpham">$278.98</h3>
-                        <!--thông tin-->
-                    </div>
+                    <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/toaster1.jpg" title="View picture" data-caption="<b>AmazonBasics 2 Slice Extra Wide Slot Toaster - Black</b>">
+                        <img src="../appliance-html/newAppliances/toaster1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../appliance-html/newAppliances/toaster2.jpg" title="View picture" data-caption="<b>Toaster 2 Slice, Retro Small Toaster with Bagel, Cancel, Defrost Function, Extra Wide Slot Compact Stainless Steel Toasters for Bread Waffles, Blue</b>">
+                        <img src="../appliance-html/newAppliances/toaster2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../appliance-html/newAppliances/toaster3.jpg" title="View picture" data-caption="<b>Cusimax 4 Slice Toaster, Extra Wide Slot with BAGEL/DEFROST/CANCEL Function, Bagel Toaster, Stainless Steel Four Slice Toaster 6 Shade Settings</b>">
+                        <img src="../appliance-html/newAppliances/toaster3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
                 </div>
     
             </div>

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,23 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="../../product/other-html/otherssp/utensilset.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>LIANYU 65-Piece Silverware Set with Serving Utensils, Stainless Steel Flatware Cutlery Set for 12, Eating Utensil Tableware Sets, Mirror Finish, Dishwasher Safe</h3>
-                    <ul>
-                        <li>SILVERWARE SET FOR 12 - The set includes 12 each: Dinner Spoon, Dinner Fork, Dinner Knife, Salad/Dessert Fork, Teaspoon, Plus Serving Pieces: Serving Spoon, Slotted Serving Spoon, Serving Fork, Butter Spreader, Ice Cream Spoon</li>
-                        <li>STAINLESS STEEL SILVERWARE - 65pc silverware set with serving pieces are made out of premium stainless steel which ensures long time usage, Sturdy Structure, Rust Resistant and Durable, Prevents you from having to make additional investments</li>
-                        <li>MODERN FLATWARE - Clean and classy looking, Smooth Surface and Mirror Polish makes these tableware sets always keep shining, Modern silverware would match well with your existing cutlery and elevate your everyday meals into a fine dining experience</li>
-                        <li>NICE WEIGHT - Great weight size of eating utensils, Our stainless steel silverware have a nice weight to them, not too heavy and absolutely not flimsy, Well designed to provide good grip for both adults and big children</li>
-                        <li>MULTI-FUNCTIONAL - Our 65 piece stainless steel silverware set comes with all the basic pieces needed for serving, Ideal for big family, entertaining, buffet, party, hotel, restaurant, bistro, camping, etc. Easy clean and dishwasher safe</li>
-                    </ul>
-                    <h3 class="giasanpham">$45.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../other-html/newOthers/utensil1.jpg" title="View picture" data-caption="<b>LIANYU 20-Piece Silverware Flatware Cutlery Set, Stainless Steel Utensils Service for 4, Include Knife/Fork/Spoon, Mirror Polished , Dishwasher Safe</b>">
+                        <img src="../other-html/newOthers/utensil1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../other-html/newOthers/utensil2.jpg" title="View picture" data-caption="<b>LIANYU 24-Piece Silverware Set with Utensil Drawer Organizer, Plus Steak Knives, Stainless Steel Flatware Cutlery Set, Modern Eating Utensils Tableware...</b>">
+                        <img src="../other-html/newOthers/utensil2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../other-html/newOthers/utensil3.jpg" title="View picture" data-caption="<b>Stately Elegance Designs 300 Piece Silver Plastic Silverware Set – Includes Forks, Knives and Spoons – Silver Cutlery – Heavy Duty Durable...</b>">
+                        <img src="../other-html/newOthers/utensil3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>

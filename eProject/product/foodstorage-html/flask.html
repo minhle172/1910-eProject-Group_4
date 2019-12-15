@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--least-->
+    <link rel="stylesheet" href="../../least-fw/css/least.min.css">
     <!--JS-->
     <script src="../../eProject/jquery-3.4.1.min.js"></script>
     <script src="../../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
@@ -169,22 +171,51 @@
         <!--Cái này chứa thông tin sản phẩm phần của tụi em làm-->
         <div class=" khungthongtin col-md-9">
             <div class=" thongtinsp row">
-                <div class="col-md-4">
-                    <img src="../../product/foodstorage-html/storagesp/flask.jpg" alt="" width="100%">
-                    <!--hình-->
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
-                    <h3>Stanley 8 oz Classic Easy Fill Wide Mouth Flask</h3>
-                    <ul>
-                        <li>Leak-proof flask with an integrated lanyard so you don't lose the cap</li>
-                        <li>Wide mouth for easy filling and pouring</li>
-                        <li>18/8 stainless steel won't rust; naturally BPA-free</li>
-                        <li>Lifetime Warranty</li>
-                    </ul>
-                    <h3 class="giasanpham">$15.99</h3>
-                    <!--thông tin-->
-                </div>
+                <!--begin using leaset library-->
+                <!-- Least Gallery -->
+        <section id="least">
+            
+            <!-- Least Gallery: Fullscreen Preview -->
+            <div class="least-preview"></div>
+            
+            <!-- Least Gallery: Thumbnails -->
+            <ul class="least-gallery">
+                <!-- 1 || Element with data-caption ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/flask1.jpg" title="View picture" data-caption="<b>Stanley 8 oz Classic Easy Fill Wide Mouth Flask</b>">
+                        <img src="../foodstorage-html/newStorage/flask1.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 2 || Element with data-caption as href-attribute ||-->
+                <li>
+                    <a href="../foodstorage-html/newStorage/flask2.jpg" title="View picture" data-caption="<b>Shot Flask - Stainless Steel 8 oz Hip Flask, Built-in Collapsible 2 Oz. Shot Glass & Flask Funnel - Everything You Need to Pour Shots on the Go - BarMe...</b>">
+                        <img src="../foodstorage-html/newStorage/flask2.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+                
+                <!-- 3 -->
+                <li>
+                    <a href="../foodstorage-html/newStorage/flask3.jpg" title="View picture" data-caption="<b>Hydro Flask Wide Mouth Water Bottle, Straw Lid - Multiple Sizes & Colors</b>">
+                        <img src="../foodstorage-html/newStorage/flask3.jpg" alt="Alt Image Text" />
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <!-- Least Gallery end -->
+
+        <!-- jQuery library -->
+        <script src="../../least-fw/js/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- least.js library -->
+        <script src="../../least-fw/js/libs/least/least.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.least-gallery').least();
+            });
+        </script>
+        <!--end use least library-->
             </div>
 
         </div>
