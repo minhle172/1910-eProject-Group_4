@@ -96,8 +96,8 @@ footer ul li a:hover{
 }
 .menuthumuc h4{
     font-weight: bold;
-    font-size: 15px;
-    color: #3F5455;
+    font-size: 17px;
+    color: rgb(167, 0, 0);
 }
 .menuthumuc ul li{
     list-style-type: none;
@@ -134,4 +134,8 @@ footer ul li a:hover{
 }
 .khungphanloai .col-md-4{
     margin-top: 10px;
+}
+.AboutUs h4{
+    color: rgb(167, 0, 0);
+    text-decoration: underline;
 }
