@@ -108,7 +108,9 @@ footer ul li a:hover{
 }
 /*Drop down speed */
 .dropdown-menu{
-    transition:all 1s ease-in;
+    border: none;
+    position:absolute;
+    top: 50px;
 }
 .dropdown:hover .dropdown-menu {
     display: block;
