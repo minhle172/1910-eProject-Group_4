@@ -13,9 +13,9 @@ Repo chứa eProject của Sem 1
 
                  Le Minh(minhl93172@gmail.com)
 
-                 Minh Phong
+                 Minh Phong(phongdino123@gmail.com)
                  
-                 Bao Thien
+                 Bao Thien(tnbt20012000@gmail.com)
                  
 ============================
 
