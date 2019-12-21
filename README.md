@@ -1,7 +1,7 @@
 # 1910.M1-eProject-Group_4
 Batch no.: T1.1910.M1
 
-Project title: TASHA - the home store
+Project title: TASHA - the home store website
 
 ========> Group 4 <=========
 
