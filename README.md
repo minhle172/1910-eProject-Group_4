@@ -3,10 +3,6 @@ Batch no.: T1.1910.M1
 
 ============================
 
-
-
-============================
-
 ========> Group 4 <=========
 
 3 collaborators: 
@@ -19,7 +15,7 @@ Batch no.: T1.1910.M1
                  
 ============================
 
-github repo link:
+github report link: https://github.com/minhle172/1910-eProject-Group_4/tree/master/Document
 
 ============================
 
