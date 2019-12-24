@@ -19,12 +19,20 @@
     <script src="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <!--owl-carousel-js-->
     <script src="owl-carousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
+    <script src="owl-carousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/src/js/owl.autoplay.js"></script>
     <!--plugin owl-carousel-->
     <script>
         $(document).ready(function() {
  
-            $(".owl-carousel").owlCarousel();
-           
+            $(".owl-carousel").owlCarousel({
+                items:3,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoPlaySpeed: 1000,
+                autoplayTimeout:2000,
+                autoplayHoverPause:true
+                });
           });
     </script>
 </head>
@@ -234,6 +242,7 @@
         <div class="owl-carousel owl-theme">
             <div style="width: 234px;">
                 <img src="product/appliance-html/newAppliances/blender1.jpg" alt="">
+                <h3>Blender</h3>
             </div>
             <div style="width: 234px;">
                 <img src="product/appliance-html/newAppliances/bread2.jpg" alt=""> 
