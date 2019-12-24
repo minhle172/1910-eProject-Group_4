@@ -10,10 +10,23 @@
     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Owl-carousel scss-->
+    <link rel="stylesheet" href="owl-carousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <!--JS-->
     <script src="jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <!--owl-carousel-js-->
+    <script src="owl-carousel/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>
+    <!--plugin owl-carousel-->
+    <script>
+        $(document).ready(function() {
+ 
+            $(".owl-carousel").owlCarousel();
+           
+          });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -214,7 +227,44 @@
             </section>
         </div>
     </div>
-
+    <hr>
+    <!--BestSellerSlider-->
+    <div class="container">
+        <h4>BEST SELLER PRODUCTS</h4>
+        <div class="owl-carousel owl-theme">
+            <div style="width: 234px;">
+                <img src="product/appliance-html/newAppliances/blender1.jpg" alt="">
+            </div>
+            <div style="width: 234px;">
+                <img src="product/appliance-html/newAppliances/bread2.jpg" alt=""> 
+            </div>
+            <div style="width: 234px;">
+                 <img src="product/appliance-html/newAppliances/chopper3.jpg" alt="">
+            </div>
+            <div style="width: 234px;"> 
+                <img src="product/cookware-html/newCookare/pot1.jpg" alt=""> 
+            </div>
+            <div style="width: 234px;"> 
+                <img src="product/cookware-html/newCookare/pot2.jpg" alt=""> 
+            </div>
+            <div style="width: 234px;"> 
+                <img src="product/cookware-html/newCookare/steam3.jpg" alt=""> 
+            </div>
+            <div style="width: 234px;"> 
+                <img src="product/foodstorage-html/newStorage/flask1.jpg" alt=""> 
+            </div>
+            <div style="width: 234px;"> 
+                <img src="product/foodstorage-html/newStorage/flask2.jpg" alt=""> 
+            </div>
+            <div style="width: 234px;"> 
+                <img src="product/foodstorage-html/newStorage/lunch2.jpg" alt=""> 
+            </div>
+            <div style="width: 234px;">
+                <img src="product/other-html/newOthers/knife1.jpg" alt="">
+            </div>
+          </div>
+            
+    </div>
     <!--footer-->
     <hr>
     <footer class="container">
