@@ -22,5 +22,9 @@ github report link: https://github.com/minhle172/1910-eProject-Group_4/tree/mast
 eProject published at https://minhle172.github.io/1910-eProject-Group_4/
 
 ============================
+
+Most picture are taken from Amazon.com
+
+============================
 Thank you for spending your time to look at our work.
 Happy Holidays
