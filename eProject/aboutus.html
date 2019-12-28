@@ -241,7 +241,7 @@
                         <textarea name="" id="" cols="30" rows="10" placeholder="Your feedback..." class="form-control"></textarea>
                     </div>
                     <div class="form-group col-md-2">
-                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                        <button type="submit" class="btn btn-primary" onclick="javascript:alert('Thank you for your respond')">SUBMIT</button>
                     </div>
                     
                 </form> 
@@ -324,16 +324,7 @@
             alert("Login successfully");
         }
         document.getElementById("formDK").onsubmit =function(){
-            var ten = document.getElementById("txtName").value.trim();
-            var username = document.getElementById("txtUser").value;
-            var passWord = document.getElementById("txtPass").value;
-            var passWordcon = document.getElementById("txtPasscon").value;
-            if(passWord !== passWordcon){
-                alert("The confirmed password and password are not the same.");
-                return false;
-            }
-
-
+            alert("Register successfully");
         }
 </script>
 </html>
